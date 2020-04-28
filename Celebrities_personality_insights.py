@@ -20,10 +20,10 @@ import pandas as pd
 
 #Twitter Data Extraction
 auth_params = {
-    'app_key':'exKc7XezqVbTe1oO7KjWyYL6L',
-    'app_secret':'1ZDVwkzRul9zVeDjxoCPsDZVtCX36agj9BcOnJX62tA2RN7a73',
-    'oauth_token':'1254062767721418752-YFPuQGTVZYxSHhqYE7EHp8iWGXorkk',
-    'oauth_token_secret':'AZVsXXvMmNGmUisIkAKo54DxvmDyuU5uGZR3spJbnfSH3'
+    'app_key':'Your API key',
+    'app_secret':'Your app_secret key',
+    'oauth_token':'Your oauth_token',
+    'oauth_token_secret':'Your oauth_token_secret'
 }
 
 auth = OAuth1 (
@@ -82,13 +82,13 @@ for tweets in list_of_tweets_celebs:
     
 #Personality_Insights:
 
-authenticator = IAMAuthenticator('o4xWNkxbznsrSZG92ewoJgDaBN-8oXZYN_hobDvYbVKr')
+authenticator = IAMAuthenticator('Your IBM API key')
 personality_insights = PersonalityInsightsV3(
     version='2017-10-13',
     authenticator=authenticator
 )
 
-personality_insights.set_service_url('https://api.eu-gb.personality-insights.watson.cloud.ibm.com/instances/07ebbe78-34a1-4099-a58f-dd7cf5589801')
+personality_insights.set_service_url('Your url')
 
 Openness = []
 Conscientiousness = []
